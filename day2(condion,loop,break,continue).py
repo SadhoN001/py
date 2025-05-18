@@ -1,3 +1,15 @@
+# pi=3.14159265359
+# formated_pi= "value of pi:{:.4f}".format(pi)
+# print(formated_pi)
+
+# print('\u21AA')
+### vowel count
+# def Vowel_cnt(input_str):
+#     vowel="aeiouAEIOU"
+#     return sum(1 for char in input_str if char in vowel)
+# x="aaa"
+# print(Vowel_cnt(x))
+
 #condition part ------------------->
 
 a= int(input())
@@ -36,6 +48,24 @@ else:
 # while i<=10:
 #     print(f"{n} X {i} = {n*i}")
 #     i=i+1
+
+# total=0
+# while True:
+#     user_imput= input("enter number (exit then stop): ")
+#     if user_imput.lower()== 'exit':
+#         print(f"total:{total}")
+#         break
+#     total+=int(user_imput)
+
+# name="skd"
+# age=24
+# output= "person:{}, age: {}.".format(name,age)
+# print(output)
+
+# name="skd"
+# age=24
+# output= "person:{0}, age: {1}.".format(name,age)
+# print(output)
 
 # Break and Continue--------------------------> 
 # for i in range(10):
