@@ -175,6 +175,41 @@
 # print(a)
 
 
+# my_set={10,20,30,40,50}
+# for index, value in enumerate(my_set):
+#     print(f"index: {index} , value: {value}")
+
+# my_set={10,20,30,40,50}
+# while my_set:
+#     item=my_set.pop()
+#     print(item)
+
+# set1={1,2,3,4}
+# set2={4,5,6}
+# rslt_set=set1.union(set2)
+# print(rslt_set) ###{1, 2, 3, 4, 5, 6}
+# rslt_set=set1 | (set2)
+# print(rslt_set) ###{1, 2, 3, 4, 5, 6}
+# rslt_set=set1.intersection(set2)
+# print(rslt_set) ###{4}
+# rslt_set=set1 & (set2)
+# print(rslt_set) ###{4}
+# rslt_set= set1.issubset(set2)
+# print(rslt_set)
+
+# my_set={30,60,90}
+# my_set.add(100)
+# print(my_set)       ###{100, 90, 60, 30}
+# my_set.update({10,20,50})
+# print(my_set)       ### {50, 10, 100, 20, 90, 60, 30}
+# my_set.remove(30)
+# print(my_set)       ### {50, 10, 100, 20, 90, 60}
+# my_set.discard(60)
+# print(my_set)       ### {50, 10, 100, 20, 90}
+# my_set.clear()
+# print(my_set) #empty
+
+
 # dictionary----------------------{ key : value }-------------------------------->
 # A collection of Key-Value Pair
 
