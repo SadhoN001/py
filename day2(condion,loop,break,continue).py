@@ -3,12 +3,6 @@
 # print(formated_pi)
 
 # print('\u21AA')
-### vowel count
-# def Vowel_cnt(input_str):
-#     vowel="aeiouAEIOU"
-#     return sum(1 for char in input_str if char in vowel)
-# x="aaa"
-# print(Vowel_cnt(x))
 
 #condition part ------------------->
 
