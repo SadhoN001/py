@@ -71,3 +71,37 @@ else:
 #     if i%3==0:
 #         continue
 #     print(i)
+
+# function----------------------------------------->
+
+# def Genfactorial(n):# function pass in parameter
+#     if n==0:
+#         return 1#the base case if n==0 then condition true and return 1 
+#     else:
+#         return n*Genfactorial(n-1)# n* recursive called factoril (n-1)
+
+# x=Genfactorial(int(input()))#function call or pass the value and return value store in x
+# print(x)# print the value of x
+
+### vowel count
+# def Vowel_cnt(input_str):
+#     vowel="aeiouAEIOU"
+#     return sum(1 for char in input_str if char in vowel)
+# x="aaa"
+# print(Vowel_cnt(x))
+
+# learn modeul part------------------------------------->
+
+# import math
+# print(math.sqrt(16))
+
+# from math import sqrt
+# print(sqrt(36))
+
+# import test1
+# print(test1.cel_far(37))
+# print(test1.area_cir(5))
+
+# from test1 import cel_far,area_cir
+# print(cel_far(38))
+# print(area_cir(5))
