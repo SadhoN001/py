@@ -6,25 +6,34 @@
 # list=[1,2,3,4]
 # print(type(list))
 # list.append("skd")#insert/append element in the list
-# print(list)
-# list.remove(3)# remove element list
-# print(list)
-# print(list[3])#Access by Index
+# print(list) ###[1, 2, 3, 4, 'skd']
+# list.remove(3)# remove element list <----------------|
+# print(list) ###[1, 2, 4, 'skd']
+# print(list[3]) ###Access by Index--->skd
 # list[0]="change"
-# print(list)
+# print(list) ###['change', 2, 4, 'skd']
+# list.insert(2,200)# insert element list <-------------|
+# print(list) ###['change', 2, 200, 4, 'skd']
+# print(list.count(100)) ###0
+# print(list.index(200)) ###2
+# # list.sort(reverse=True)
+# # print(list)
+# # s=sorted(list)
+# # print(s)
+# print(len(list)) ###5
 
-# n=int(input())
+# n=int(input("Enter the number: "))
 # l=[]
 # for i in range(n):
 #     l.append(input())
 # print(l)
 
-# user_inp=input("Enter item separated by comma:")
+# user_inp=input("Enter item separated by comma: ") # apple,banana,mango
 # l=user_inp.split(",")
 # print(l)
 
-# user_inp=input("Enter item separated by space:")
-# l=list(map(int,user_inp.split()))# only int 
+# user_inp=input("Enter item separated by space: ") # 1 2 3 4
+# l=list(map(int,user_inp.split()))# only int [str...etc]
 # print(l)
 
 # def l_sum(a):
@@ -57,15 +66,75 @@
 # y=min(list1)# min stl
 # print(y)
 
+# list=[
+#     {
+#     "id": 1,
+#     "name": "Yamaha R15 V4",
+#     "brand": "Yamaha",
+#     "description": "A premium sports bike with advanced technology and sleek design.",
+#     "price": 420000,
+#     "rating": 4.7,
+#     "image": "https://images.hindustantimes.com/auto/img/2022/05/11/1600x900/2021-Yamaha-R15-V4-Monster-Energy-MotoGP-Edition-Front-Quarter_1652236418830_1652236426891.jpg\n"
+#   },
+#   {
+#     "id": 2,
+#     "name": "Honda CBR 150R",
+#     "brand": "Honda",
+#     "description": "A well-balanced motorcycle offering comfort, speed, and fuel efficiency.",
+#     "price": 400000,
+#     "rating": 4.5,
+#     "image": "https://www.motorbeam.com/wp-content/uploads/Honda-CBR150R-Test-Ride-Review.jpg"
+#   }]
+
+# for i in list:
+#     for x,y in i.items():
+#         print(f"{x}:{y}")
+
 #Tuple-----------------------------------------(  )------------------------->
 # An immutable, ordered collection if items. 
+## can not be append ,insert,change beacause immutable.
 
 # my_tpl=(1,2,'a','b')
 # print(type(my_tpl))
 # print(my_tpl)
 # print(my_tpl[1])
-# my_tpl[0]="ch"
-# print(my_tpl)# it show Traceback, because tuple immutable
+## my_tpl[0]="ch"
+## print(my_tpl)# it show Traceback, because tuple immutable
+
+# a=(1,2,3)
+# x,y,z=a
+# print(x,y,z)
+
+# n=(1,2,3,4,5)
+# first,*rest,last=n
+# print(first,rest,last) ### 1 [2, 3, 4] 5
+
+# a=(1,2,3)
+# b=(4,5,6)
+# c=a+b
+# print(c) ### (1, 2, 3, 4, 5, 6)
+# c=a*2
+# print(c) ### (1, 2, 3, 1, 2, 3)
+
+# name=('a','b','c')
+# age=('1','2','3')
+# result_tuple= tuple(zip(name,age))
+# print(result_tuple) ###(('a', '1'), ('b', '2'), ('c', '3'))
+
+# t=(1,2,2,3,4,2,5)
+# cnt=t.count(2) 
+# print(cnt)#3
+# s=sorted(t)
+# print(s) # [1, 2, 2, 2, 3, 4, 5]
+# print(type(s))#list
+# l=len(t)
+# print(l) # 7
+# sorted(t)
+# print(t)#(1, 2, 2, 3, 4, 2, 5)
+# print(type(t))#tuple
+# t=(10,20,30,40,50,60,70,80)
+# i=t.index(30) # 2
+# print(i)
 
 # def t_sum(a):
 #     sum=0
