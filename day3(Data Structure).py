@@ -213,6 +213,54 @@
 # dictionary----------------------{ key : value }-------------------------------->
 # A collection of Key-Value Pair
 
+# my_dict={'name':"skd", 'age':'25', 'city':'bangladesh'}
+# del my_dict['age']
+# print(my_dict) #{'name': 'skd', 'city': 'bangladesh'}
+# print(my_dict['name']) #skd
+# my_dict.clear()
+# print(my_dict) #{}
+
+# my_dict={'name':"skd", 'age':'25', 'city':'bangladesh'}
+# keys=my_dict.keys()
+# print(keys) # dict_keys(['name', 'age', 'city'])
+# values=my_dict.values()
+# print(values) # dict_values(['skd', '25', 'bangladesh'])
+# items= my_dict.items()
+# print(items) #dict_items([('name', 'skd'), ('age', '25'), ('city', 'bangladesh')])
+# age=my_dict.get('age')
+# print(age) #25
+# remove_age= my_dict.pop('age')
+# print(remove_age) #25
+# print(my_dict) # {'name': 'skd', 'city': 'bangladesh'}
+# new_data={'age':30,'hobby':'playing'}
+# my_dict.update(new_data)
+# print(my_dict) # {'name': 'skd', 'city': 'bangladesh', 'age': 30, 'hobby': 'playing'}
+
+
+# my_dict={'name':"skd", 'age':'25', 'city':'bangladesh'}
+# for key in my_dict:
+#     print(key)
+    
+# for value in my_dict.values():
+#     print(value)
+    
+# for key,value in my_dict.items():
+#     print(f"{key} : {value}")
+
+# person={
+#     'name':"skd",
+#     'age':'25',
+#     'address':{
+#         'city':'bangladesh',
+#         'zipcode':"2410"
+#     }
+# }
+# print(person)
+# print(person['address']['city']) #bangladesh
+# person['address']['zipcode']='1111'
+# print(person['address']['zipcode']) #1111
+
+
 # # a={"a":10,"b":20,"c":30}# dictionary key and value
 # a={}
 # n=int(input("number of student:"))
