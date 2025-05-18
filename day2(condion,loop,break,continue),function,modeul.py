@@ -83,12 +83,12 @@ else:
 # x=Genfactorial(int(input()))#function call or pass the value and return value store in x
 # print(x)# print the value of x
 
-### vowel count
-# def Vowel_cnt(input_str):
-#     vowel="aeiouAEIOU"
-#     return sum(1 for char in input_str if char in vowel)
-# x="aaa"
-# print(Vowel_cnt(x))
+## vowel count
+def Vowel_cnt(input_str):
+    vowel="aeiouAEIOU"
+    return sum(1 for char in input_str if char in vowel)
+x="aaa"
+print(Vowel_cnt(x))
 
 # learn modeul part------------------------------------->
 
