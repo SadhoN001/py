@@ -26,6 +26,21 @@ elif a<80 and a>=33:
     print("Medium")
 else:
     print("Sorry!")
+
+
+str = input(" ")
+
+# cnt1 = user_input.count("cat")
+
+# cnt2 = user_input.count("hat")
+
+#print(cnt1 , cnt2)
+
+if str.count("cat") == str.count("hat"):
+    print(True)
+
+else:
+    print(False)
     
 #Nested conditional part----------------------------->
 
