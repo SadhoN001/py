@@ -1,0 +1,90 @@
+# ##pip install matplotlib
+import matplotlib.pyplot as plt
+
+x=[1,2,3,4,5]
+y=[10,15,25,30,20]
+# y=[10,5,10,5,10]
+
+# user_inp=input("Enter item separated by space: ") # 1 2 3 4
+# x=list(map(int,user_inp.split()))
+# user_inp=input("Enter item separated by space: ") # 1 2 3 4
+# y=list(map(int,user_inp.split()))
+
+plt.plot(x,y)
+plt.show()
+
+plt.plot(x,y, marker='o',linestyle='--',color='red', label='My Line')
+# linestyle supported values are '-', '--', '-.', ':', 'None', ' ', '', 'solid', 'dashed', 'dashdot', 'dotted'
+plt.xlabel('X-axis label')
+plt.ylabel('Y-axis label')
+plt.title('Customaized line plot')
+plt.legend()#Show a legend box on the plot with the text "My Line" representing that line.
+plt.show()
+
+# plotting------------------------------------------------>
+import matplotlib.pyplot as plt
+import numpy as np
+
+xpoint= np.array([1,2,6,8])
+ypoint= np.array([3,8,1,10])
+
+plt.plot(xpoint,ypoint,"o",linestyle="-",color="g")
+# plt.plot(
+#     xpoint, ypoint,
+#     color='purple',                # Line color
+#     linestyle='--',                # Dashed line
+#     linewidth=2.5,                 # Line thickness
+#     marker='o',                    # Marker shape (circle)
+#     markersize=10,                 # Marker size
+#     markerfacecolor='yellow',      # Fill color of marker
+#     markeredgecolor='black',       # Edge color of marker
+#     markeredgewidth=2,             # Edge width of marker
+#     drawstyle='steps-post',        # Step style line
+#     alpha=0.8,                     # Transparency
+#     label='My Line',               # Label for legend
+#     zorder=2                       # Draw order
+# )
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.title('Line Plot with All Customizations')
+plt.legend()
+plt.grid(True)
+plt.show()
+
+## ----------------------------------------------------------------------------------------------------------------------------------------------------------
+# # marker supported values are 'o' (circle), '.' (point), ',' (pixel), 'x' (x), '+' (plus), '^' (triangle up), 'v' (triangle down), '>' (triangle right), 
+#      '<' (triangle left), 's' (square), 'p' (pentagon), '*' (star), 'h' (hexagon 1), 'H' (hexagon 2), 'D' (diamond), 'd' (thin diamond),
+#        '|' (vertical line), '_' (horizontal line), 'None', '', or ' ' (no marker).
+
+# # linestyle supported values are '-' (solid), '--' (dashed), '-.' (dash-dot), ':' (dotted), 'None', ' ', or '' (no line), 'solid', 'dashed', 'dashdot', 'dotted'.
+
+# # color supported values are color names like 'red', 'blue', 'green', 'black', 'yellow', 'cyan', 'magenta', short codes like 'r', 'g', 'b', 'k', 'y', 'c', 'm', 'w',
+#        hex codes like '#FF5733', or RGB tuples like (0.1, 0.5, 0.8).
+
+# # drawstyle supported values are 'default', 'steps', 'steps-pre', 'steps-mid', 'steps-post'.
+# # markerfacecolor (mfc) sets the fill color of the marker and accepts same values as color.
+# # markeredgecolor (mec) sets the edge color of the marker and accepts same values as color.
+# # markeredgewidth (mew) sets the thickness of the marker edge in float values like 1.0, 2.5, etc.
+# # markersize (ms) sets the size of the marker in float values like 5, 10, etc.
+# # linewidth (lw) sets the line thickness in float values like 2, 3.5, etc.
+# # alpha controls transparency where 0 is fully transparent and 1 is fully opaque.
+# # label is used to name the line for the legend, e.g., 'label="My Line"'.
+# # zorder controls layer order — higher values appear on top.
+# #------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# marker------------------------------------------->
+import matplotlib.pyplot as plt
+
+x=[1,2,3,4,5]
+y=[10,15,25,30,20]
+
+plt.plot(x, y, marker='o', label='circle')
+plt.plot(x, y, marker='s', label='square')
+plt.plot(x, y, marker='^', label='trinangle')
+plt.plot(x, y, marker='*', label='star')
+
+plt.xlabel('x-axis')
+plt.ylabel('y-axis')
+plt.title("basic marker type")
+plt.legend()
+plt.show()
