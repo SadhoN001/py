@@ -3,6 +3,23 @@
 #list----------------------------------------[  ]----------------------->
 # An ordered,mutable collection of iteams.
 
+# my_list=[1,2,3,4,5]
+# first_element=my_list[0]
+# subset=my_list[1:4]
+# my_list[2]=10
+# my_list.append(6)
+# my_list.remove(4)
+
+# print(f'my list: {my_list}')
+# print(f'first_element: {first_element}')
+# print(f'subset: {subset}')
+
+# import numpy as np
+# my_array= np.array([1,2,3,4,5])
+# frist_element_np= my_array[0]
+# print(f'my numpy array: {my_array}')
+# print(f'frist_element_np: {frist_element_np}')
+
 # list=[1,2,3,4]
 # print(type(list))
 # list.append("skd")#insert/append element in the list
