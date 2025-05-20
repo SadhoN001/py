@@ -88,3 +88,20 @@ plt.ylabel('y-axis')
 plt.title("basic marker type")
 plt.legend()
 plt.show()
+
+# line-------------------------------->
+import matplotlib.pyplot as plt
+
+
+x=[1,2,3,4,5]
+y=[10,15,20,25,30]
+y1=[5,10,15,20,25]
+
+plt.plot(x,y, label='line 1')
+plt.plot(x,y1, label='line 2')
+
+plt.xlabel('x-axis')
+plt.ylabel('y-axis')
+plt.title('label plot with positioned legend')
+plt.legend(loc='upper left', fontsize=12, frameon=False)
+plt.show()
