@@ -4,7 +4,20 @@
 
 # print('\u21AA')
 
-#condition part ------------------->
+# # Bitwaise-------------------------->
+# a=5
+# b=3
+# bitwaise_and= a&b
+# bitwaise_or= a|b
+# bitwaise_xor= a^b
+# bitwaise_not_a= ~a
+
+# print("bitwaise_and:", bitwaise_and)#1
+# print("bitwaise_or:", bitwaise_or)#7
+# print("bitwaise_xor:", bitwaise_xor)#6
+# print("bitwaise_not_a:", bitwaise_not_a)#-6
+
+#condition part -------------------------------->
 
 a= int(input())
 if a>79:
@@ -14,7 +27,7 @@ elif a<80 and a>=33:
 else:
     print("Sorry!")
     
-#Nested conditional part--------------->
+#Nested conditional part----------------------------->
 
 # a=int(input())
 # if a>=33:
