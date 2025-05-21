@@ -169,3 +169,28 @@ plt.title("Bar Plot")
 plt.xlabel('Categories')
 plt.ylabel('Values')
 plt.show()
+
+# Histogram------------------------------------------->
+import matplotlib.pyplot as plt
+
+data=[2,3,3,4,4,4,5,5,5,5,6,6,7,7,8]
+
+plt.subplot(1,3,1)
+plt.hist(data, bins=6, color='skyblue', edgecolor='black')
+plt.title('Histogram')
+plt.xlabel('value')
+plt.ylabel('frequency')
+# plt.show()
+
+# import numpy as np
+# x=np.random.normal(170,10,250)
+# plt.hist(x)
+# plt.show()
+
+exam_score=[65,75,80,86,90,95,98,92,100]
+plt.subplot(1,2,2)
+plt.hist(exam_score, bins=10, color='green', edgecolor='black')
+plt.title('exam_score Histogram')
+plt.xlabel('exam_score')
+plt.ylabel('frequency')
+plt.show()
