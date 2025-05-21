@@ -146,6 +146,7 @@ plt.title('purple plot4')
 
 plt.show()
 # scatter---------------------------------------------------->
+
 import matplotlib.pyplot as plt
 
 x=[2,4,5,7,8]
@@ -157,3 +158,14 @@ plt.xlabel('X-axis label')
 plt.ylabel('Y-axis label')
 plt.show()
 
+# Bar---------------------------------------------------------------->
+import matplotlib.pyplot as plt
+
+categories =['Categories A', 'Categories B', 'Categories C', 'Categories D']
+values=[30,45,20,60]
+
+plt.bar(categories,values, color=['orange','pink','skyblue','gray'],edgecolor='black')
+plt.title("Bar Plot")
+plt.xlabel('Categories')
+plt.ylabel('Values')
+plt.show()
