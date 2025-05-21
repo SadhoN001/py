@@ -145,4 +145,15 @@ plt.plot([3,2,1],[6,5,4], color='purple')
 plt.title('purple plot4')
 
 plt.show()
+# scatter---------------------------------------------------->
+import matplotlib.pyplot as plt
+
+x=[2,4,5,7,8]
+y=[10,15,20,25,30]
+
+plt.scatter(x,y, color='red',marker='o',s=100, edgecolors='black')
+plt.title('Customized Scatter Plot')
+plt.xlabel('X-axis label')
+plt.ylabel('Y-axis label')
+plt.show()
 
