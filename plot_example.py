@@ -126,3 +126,23 @@ plt.plot(x, [i**2 for i in y],'o',linestyle='solid')
 plt.grid(True)
 plt.show()
 # *********************************************
+import matplotlib.pyplot as plt
+
+plt.subplot(2,2,1) # (nrows, ncols, index)
+plt.plot([1,2,3],[4,5,6])
+plt.title('plot1')
+
+plt.subplot(2,2,2)
+plt.plot([3,2,1],[6,5,4])
+plt.title('plot2')
+
+plt.subplot(2,2,3)
+plt.plot([1,2,3],[4,5,6], color='red')
+plt.title('red plot3')
+
+plt.subplot(2,2,4)
+plt.plot([3,2,1],[6,5,4], color='purple')
+plt.title('purple plot4')
+
+plt.show()
+
