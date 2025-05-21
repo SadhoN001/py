@@ -105,3 +105,24 @@ plt.ylabel('y-axis')
 plt.title('label plot with positioned legend')
 plt.legend(loc='upper left', fontsize=12, frameon=False)
 plt.show()
+
+# grid and Plot---------------------------------------->
+import matplotlib.pyplot as plt
+
+x=[1,2,3,4,5]
+y=[10,15,20,25,30]
+
+
+# plt.plot(x,y)
+# plt.grid(color='red',linestyle='--', linewidth=2)
+# plt.show()
+
+plt.subplot(1,2,1) # 1 row, 2 columns, 1st plot -->(nrows, ncols, index)
+plt.plot(x,y,'o',linestyle='solid')
+plt.grid(True)
+
+plt.subplot(1,2,2)
+plt.plot(x, [i**2 for i in y],'o',linestyle='solid')
+plt.grid(True)
+plt.show()
+# *********************************************
