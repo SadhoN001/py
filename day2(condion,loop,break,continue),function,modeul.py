@@ -126,6 +126,12 @@ def add(*args):
 r=add(1,2,3,4)
 print(r)
 
+#keyword argument--->
+def fun(**kwargs):
+    print(kwargs)
+    print(f"my name is {kwargs['f_name']} {kwargs['l_name']} and age {kwargs['age']}\n mark={kwargs['mark']} ")
+    
+fun(age=25, l_name="dev",mark=95,f_name="Sadhon Kumar")
 
 
 # learn modeul part------------------------------------->
