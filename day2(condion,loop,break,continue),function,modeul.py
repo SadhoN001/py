@@ -118,6 +118,16 @@ def Vowel_cnt(input_str):
 x="aaa"
 print(Vowel_cnt(x))
 
+#multiple argument-->
+def add(*args):
+    print(args)
+    return (sum(args))
+    
+r=add(1,2,3,4)
+print(r)
+
+
+
 # learn modeul part------------------------------------->
 
 # import math
