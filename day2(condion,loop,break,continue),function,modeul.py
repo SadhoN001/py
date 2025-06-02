@@ -154,7 +154,7 @@ sq_num= list(map(lambda x: x*x , nums))
 print(sq_num)
 
 
-# ## fikter----------------->
+# ## filter----------------->
 even= list(filter(lambda x: x%2==0 ,nums))
 print(even)
 
@@ -162,6 +162,25 @@ print(even)
 # ## reduce---------------->
 sum= functools.reduce(lambda x,y : x+y , nums )
 print(sum)
+
+# scope------------------->
+# LEGB( local enclosing global built in scope)
+
+n = "Global"  # Global variable
+
+def outer():
+    n = "enclosing"  # enclosing variable
+    def inner():
+        global n
+        # nonlocal n
+        n = "local"  # local variable
+        print(n)#local 2nd
+    print(n)# enclosing 1st
+    inner()
+    print(n)# enclosing 3rd
+
+outer()
+print(n)# local
 
 
 
