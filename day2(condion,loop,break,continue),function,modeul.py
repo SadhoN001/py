@@ -1,21 +1,21 @@
-# pi=3.14159265359
-# formated_pi= "value of pi:{:.4f}".format(pi)
-# print(formated_pi)
+pi=3.14159265359
+formated_pi= "value of pi:{:.4f}".format(pi)
+print(formated_pi)
 
-# print('\u21AA')
+print('\u21AA')
 
 # # Bitwaise-------------------------->
-# a=5
-# b=3
-# bitwaise_and= a&b
-# bitwaise_or= a|b
-# bitwaise_xor= a^b
-# bitwaise_not_a= ~a
+a=5
+b=3
+bitwaise_and= a&b
+bitwaise_or= a|b
+bitwaise_xor= a^b
+bitwaise_not_a= ~a
 
-# print("bitwaise_and:", bitwaise_and)#1
-# print("bitwaise_or:", bitwaise_or)#7
-# print("bitwaise_xor:", bitwaise_xor)#6
-# print("bitwaise_not_a:", bitwaise_not_a)#-6
+print("bitwaise_and:", bitwaise_and)#1
+print("bitwaise_or:", bitwaise_or)#7
+print("bitwaise_xor:", bitwaise_xor)#6
+print("bitwaise_not_a:", bitwaise_not_a)#-6
 
 #condition part -------------------------------->
 
@@ -31,9 +31,7 @@ else:
 str = input(" ")
 
 # cnt1 = user_input.count("cat")
-
 # cnt2 = user_input.count("hat")
-
 #print(cnt1 , cnt2)
 
 if str.count("cat") == str.count("hat"):
@@ -132,6 +130,40 @@ def fun(**kwargs):
     print(f"my name is {kwargs['f_name']} {kwargs['l_name']} and age {kwargs['age']}\n mark={kwargs['mark']} ")
     
 fun(age=25, l_name="dev",mark=95,f_name="Sadhon Kumar")
+
+##lambda ----------------------> anonymous function
+#lambda function print korte pare na..return korte pare
+sqr=lambda x: x*x
+print(sqr(4))
+
+add= lambda a,b:a+b
+print(add(5,7))
+
+student= [('rahim',60),('karim',49),('fahim',100)]
+sorted_student= sorted(student, key= lambda x: x[1])
+print(sorted_student)
+
+## map------------------->
+nums=[1,2,3,4]
+
+sq_num= list(map(str,nums))
+print(sq_num)
+sq_num= list(map(float,nums))
+print(sq_num)
+sq_num= list(map(lambda x: x*x , nums))
+print(sq_num)
+
+
+# ## fikter----------------->
+even= list(filter(lambda x: x%2==0 ,nums))
+print(even)
+
+# import functools
+# ## reduce---------------->
+sum= functools.reduce(lambda x,y : x+y , nums )
+print(sum)
+
+
 
 
 # learn modeul part------------------------------------->
