@@ -54,10 +54,8 @@
 # # Creating two objects of the Person class
 # person1 = Person("Alice", 25)
 # person2 = Person("Bob", 30)
-
 # # Updating the age of person1
 # person1.update_age(26)
-
 # # Printing the updated details of both objects
 # person1.display_info()
 # person2.display_info()
