@@ -9,7 +9,25 @@
 #     ->Polymorphism: Flexibility and Extensibility
 #     ->Abstractiom : 
 
-# class--------------------------------------->
+# class and Object--------------------------------------->
+class Car:
+    def __init__(self):
+        self.brand=""
+        self.model=""
+        
+car1=  Car()
+car1.brand='toyota'
+car1.model='Corolla'
+print(car1.brand)
+print(car1.model)
+
+car2=  Car()
+car2.brand='Honda'
+car2.model='civic'
+print(car2.brand)
+print(car2.model)
+
+
 # class dog:
 #     #constructor
 #     def __init__(self,name,age):
