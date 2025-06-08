@@ -10,11 +10,25 @@
 #     ->Abstractiom : 
 
 # class and Object--------------------------------------->
+
+# __init__(): Dunder merhod, Constructor, no return
+# constructor 3 type 
+# 1. Default Constructor
+# 2.Parameterized Constructor
+# 3.Default value Constructor
+
 class Car:
-    def __init__(self):
+    def __init__(self): 
         self.brand=""
         self.model=""
-        
+    # def __init__(self, brand, model): 
+    #     self.brand= brand
+    #     self.model= model
+    # def __init__(self, brand="toyota", model="corolla"): 
+    #     self.brand= brand
+    #     self.model= model
+    
+### 1. Default Constructor     
 car1=  Car()
 car1.brand='toyota'
 car1.model='Corolla'
@@ -26,6 +40,19 @@ car2.brand='Honda'
 car2.model='civic'
 print(car2.brand)
 print(car2.model)
+
+##2 Parameterized Constructor
+# car=  Car('toyota','corola')
+# print(car.brand)
+# print(car.model)
+
+# 3.Default value Constructor
+# car=Car()
+# print(car.brand,car.model)
+
+
+
+
 
 
 class dog:
