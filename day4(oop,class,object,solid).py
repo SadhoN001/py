@@ -58,10 +58,10 @@ print(car2.model)
 class dog:
     #constructor
     def __init__(self,name,age):
-        self.n=name
+        self.n=name #instance variable
         self.age=age
     #Method
-    def bark(self):
+    def bark(self): #instance methoad
         return f"{self.n} says woof!age={self.age}"
        
 a=dog("piku",11)
