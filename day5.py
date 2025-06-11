@@ -181,6 +181,29 @@
 # b=rectangle()
 # print(b.area(5,4))
 
+# Single Responsibility Principle (SRP).--------------------------->
+class Car:
+    def __init__(self, model):
+        self.model = model
+
+    def drive(self):
+        print(f"{self.model} is being driven.")
+
+
+class FuelEfficiencyCalculator:
+    def calculate_fuel_efficiency(self, miles, fuel):
+        if fuel == 0:
+            return 0  # Avoid division by zero
+        return miles / fuel
+
+
+# Example usage
+car = Car("Toyota")
+car.drive()
+
+fuel_calculator = FuelEfficiencyCalculator()
+efficiency = fuel_calculator.calculate_fuel_efficiency(100, 5)
+print(f"Fuel Efficiency: {efficiency} miles per gallon")
 # Single Responsibility Principle (SRP)--------------------->
 
 # from abc import ABC,abstractmethod
