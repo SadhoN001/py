@@ -136,6 +136,36 @@ person1.update_age(26)
 person1.display_info()
 person2.display_info()
 
+## Access Control
+## setter getter----------------------------------------------------->
+class Employee:
+    company_name="skd company"
+    def __init__(self, name, salary):
+        self.name= name
+        self._salary= salary # protected variable. jekeo chaile modify korte parbe na
+                            #private variable but logically private hoy na
+    def get_salary(self, password):
+        if password == "admin":
+            print(f"get salary:{self._salary}")
+        else:
+            print("invalid password")
+            
+    def set_salary(self, password, salary):
+        if password == "admin":
+            self._salary= salary
+            print(f"new salary : {self._salary}")
+        else:
+            print("invalid password")
+
+ob1= Employee("rahim", 30000)
+ob2= Employee("karim", 50000)
+# print(ob1._salary)
+# ob1._salary= 60000
+# print(ob1._salary)
+
+ob1.get_salary("admin")
+ob1.set_salary("admin", 70000)
+print(ob1._salary)
 
 
 
