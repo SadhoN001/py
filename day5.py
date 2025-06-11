@@ -182,6 +182,7 @@
 # print(b.area(5,4))
 
 # Single Responsibility Principle (SRP).--------------------------->
+# # oop part-1 12number slid task 3 
 class Car:
     def __init__(self, model):
         self.model = model
