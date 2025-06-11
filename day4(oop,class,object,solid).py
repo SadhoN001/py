@@ -136,27 +136,6 @@ person1.update_age(26)
 person1.display_info()
 person2.display_info()
 
-# Single Responsibility Principle (SRP).--------------------------->
-## oop part-1 12number slid task 3 
-# class Car:
-#     def __init__(self, model):
-#         self.model = model
-
-#     def drive(self):
-#         print(f"{self.model} is being driven.")
 
 
-# class FuelEfficiencyCalculator:
-#     def calculate_fuel_efficiency(self, miles, fuel):
-#         if fuel == 0:
-#             return 0  # Avoid division by zero
-#         return miles / fuel
 
-
-# # Example usage
-# car = Car("Toyota")
-# car.drive()
-
-# fuel_calculator = FuelEfficiencyCalculator()
-# efficiency = fuel_calculator.calculate_fuel_efficiency(100, 5)
-# print(f"Fuel Efficiency: {efficiency} miles per gallon")
