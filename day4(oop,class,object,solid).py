@@ -51,7 +51,24 @@ print(car2.model)
 # print(car.brand,car.model)
 
 
-
+class Employee:
+    company_name="skd company"
+    def __init__(self, name, salary):
+        self.name= name
+        self.salary= salary
+        
+    def display_info(self): # instance method
+        print(f"EMP name : {self.name}\nSalary : {self.salary}")
+        
+    @classmethod
+    def change_company_name(cls, name):# class method
+        cls.company_name= name
+        
+ob1= Employee("Sadhon", 3000)
+ob1.display_info()
+# ob1.change_company_name("jkd company")
+Employee.change_company_name("jkd company")
+print(ob1.company_name)
 
 
 
