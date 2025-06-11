@@ -71,6 +71,20 @@ Employee.change_company_name("jkd company")
 print(ob1.company_name)
 
 
+### static method
+class School:
+    school_name= "ABC school"
+    
+    @staticmethod
+    def calculate_grade(marks):
+        if 90<=marks:
+            return "A+"
+        else:
+            return "F"
+        
+print(School.calculate_grade(99))
+        
+
 
 class dog:
     #constructor
