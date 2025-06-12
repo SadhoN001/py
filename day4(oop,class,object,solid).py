@@ -167,5 +167,24 @@ ob1.get_salary("admin")
 ob1.set_salary("admin", 70000)
 print(ob1._salary)
 
-
+### Property Decorator
+class Employee:
+    company_name="skd company"
+    def __init__(self, name, salary):
+        self.name= name
+        self._salary= salary 
+    
+    @property
+    def salary(self): # get_salary dile kaj korbe..but _salary use korate keo salary update korete parbe na
+        return self._salary
+    
+    @salary.setter
+    def salary(self, new_salary):
+        self._salary= new_salary
+    
+ob1= Employee("rahim", 40000)
+print(ob1.salary)
+# print(ob1.get_salary)
+ob1.salary=70000
+print(ob1._salary)
 
