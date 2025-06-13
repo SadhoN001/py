@@ -20,9 +20,9 @@
 # tata=Vehicle("abc",2015,5)
 # tata.details()
 
-# bmw=Car("y20",4,4,5)
+# bmw=Car("y20",2025,4,5)
 # bmw.details()
-# print(bmw.doors)
+# print(f"y20 has {bmw.doors} doors")
 
 # class Animal:
 #     def __init__(self,name,species):
