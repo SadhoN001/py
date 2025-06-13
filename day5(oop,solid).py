@@ -1,59 +1,59 @@
 # # Inheritance------------------------------------------------------>
-# class Vehicle:#parents class
-#     def __init__(self,model,year,wheels):
-#         self.model=model
-#         self.year=year
-#         self.wheels=wheels
-#     def details(self):
-#         print(f"{self.model} are register {self.year} year and has {self.wheels} wheels")
+class Vehicle:#parents class
+    def __init__(self,model,year,wheels):
+        self.model=model
+        self.year=year
+        self.wheels=wheels
+    def details(self):
+        print(f"{self.model} are register {self.year} year and has {self.wheels} wheels")
         
-# class Car(Vehicle):#child class
-#     def __init__(self,model, year, wheels,doors):
-#         super().__init__(model, year, wheels)#super are built in function that pass parent classa attributes
-#         self.doors=doors
+class Car(Vehicle):#child class
+    def __init__(self,model, year, wheels,doors):
+        super().__init__(model, year, wheels)#super are built in function that pass parent classa attributes
+        self.doors=doors
     
-# class Bike(Vehicle):#child class
-#     def __init__(self, model, year, wheels,c_angle):
-#         super().__init__(model, year, wheels)
-#         self.c_angle=c_angle
+class Bike(Vehicle):#child class
+    def __init__(self, model, year, wheels,c_angle):
+        super().__init__(model, year, wheels)
+        self.c_angle=c_angle
         
-# tata=Vehicle("abc",2015,5)
-# tata.details()
+tata=Vehicle("abc",2015,5)
+tata.details()
 
-# bmw=Car("y20",2025,4,5)
-# bmw.details()
-# print(f"y20 has {bmw.doors} doors")
+bmw=Car("y20",2025,4,5)
+bmw.details()
+print(f"y20 has {bmw.doors} doors")
 
-# class Animal:
-#     def __init__(self,name,species):
-#         self.name=name
-#         self.species=species
-#     def make_sound(self):
-#         print(f"{self.name} the {self.species} make sound")
+class Animal:
+    def __init__(self,name,species):
+        self.name=name
+        self.species=species
+    def make_sound(self):
+        print(f"{self.name} the {self.species} make sound")
 
-# class dog(Animal):
-#     def __init__(self, name, breed):
-#         super().__init__(name, species="dog")
-#         self.breed=breed
-#     def show_breed(self):
-#         print(f"{self.name} is a {self.breed} dog")
+class dog(Animal):
+    def __init__(self, name, breed):
+        super().__init__(name, species="dog")
+        self.breed=breed
+    def show_breed(self):
+        print(f"{self.name} is a {self.breed} dog")
 
-# class cat(Animal):
-#     def __init__(self, name, color):
-#         super().__init__(name, species="cat")
-#         self.color=color
-#     def show_color(self):
-#         print(f"{self.name} is a {self.color} cat")
+class cat(Animal):
+    def __init__(self, name, color):
+        super().__init__(name, species="cat")
+        self.color=color
+    def show_color(self):
+        print(f"{self.name} is a {self.color} cat")
         
-# animal=Animal("leo","lion")
-# dogy=dog("tom","deshi")
-# kity=cat("jerry","brown")
+animal=Animal("leo","lion")
+dogy=dog("tom","deshi")
+kity=cat("jerry","brown")
 
-# animal.make_sound()
-# dogy.make_sound()
-# dogy.show_breed()
-# kity.make_sound()
-# kity.show_color()
+animal.make_sound()
+dogy.make_sound()
+dogy.show_breed()
+kity.make_sound()
+kity.show_color()
 
 
 # # polymorphism------------------------------------------->
