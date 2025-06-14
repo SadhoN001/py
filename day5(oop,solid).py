@@ -14,8 +14,82 @@ class Father(GrandFather):
 gf1= GrandFather('red','chowdhury')
 f1= Father('cricket','red','chowdhury')
 print(f1.color)
+
 ## multiple
+class GrandFather:
+    def __init__(self, color, first_name):
+        self.color= color
+        self.first_name=first_name
+    def gf_method(self):
+        print("i am from grandfather")
+        
+class Father(GrandFather):
+    def __init__(self, hobby, color,first_name):
+        super().__init__(color,first_name)
+        self.hobby=hobby
+    def f_method(self):
+        print("i am from father")
+        
+class Children(Father, GrandFather):
+    def __init__(self, fashion, hobby, color, first_name):
+        super().__init__(hobby, color, first_name)
+        self.fashion= fashion
+        
+c1= Children("test", "football", "blue", "dev")
+c1.gf_method()
+c1.f_method()
+print(c1.fashion, c1.color, c1.first_name)
+___________________________________________________________
+class GrandFather:
+    def __init__(self, color, first_name):
+        self.color= color
+        self.first_name=first_name
+    def gf_method(self):
+        print("i am from grandfather")
+        
+class Father(GrandFather):
+    def __init__(self, hobby):
+        self.hobby=hobby
+    def f_method(self):
+        print("i am from father")
+        
+class Children(Father, GrandFather):
+    def __init__(self, fashion, hobby, color, first_name):
+        Father.__init__(self, hobby)
+        GrandFather.__init__(self, color, first_name)
+        self.fashion= fashion
+          
+c1= Children("test", "football", "blue", "dev")
+c1.gf_method()
+c1.f_method()
+print(c1.fashion, c1.color, c1.first_name)
+
 ## multilevel
+class GrandFather:
+    def __init__(self, color, first_name):
+        self.color= color
+        self.first_name=first_name
+    def gf_method(self):
+        print("i am from grandfather")
+        
+class Father(GrandFather):
+    def __init__(self, hobby, color, first_name):
+        super().__init__( color, first_name)
+        self.hobby=hobby
+    def f_method(self):
+        print("i am from father")
+        
+class Children(Father, GrandFather):
+    def __init__(self, fashion, hobby, color, first_name):
+        super().__init__( hobby, color, first_name)### this is main cause multilevel
+        self.fashion= fashion
+          
+c1= Children("test", "football", "blue", "dev")
+c1.gf_method()
+c1.f_method()
+print(c1.fashion, c1.color, c1.first_name)
+        
+    
 ## hierarchical
 ## hybrid
 
