@@ -263,6 +263,35 @@ c.greet()
 # b.play()
 
 #Encapsulation-----------(public,private)-------------------------------------->
+
+class GrandFather:
+    def __init__(self):
+        self.name= "hello" # public
+        self._age= 30 # protected
+        self.__khajana= 3000 # private
+        
+    def greet(self):
+        print("Grandfather says")
+        
+class Father(GrandFather):
+    def greet(self):
+        print(f"father says, {self._GrandFather__khajana}")
+        
+class Children(Father):
+    def greet(self):
+        print("Children says")
+
+gf = GrandFather()
+f= Father()
+c= Children()
+# gf.greet()
+f.greet()
+# c.greet()
+print(f._GrandFather__khajana)
+print(f._age)
+
+
+
 # class Account:
 #     def __init__(self,balance):
 #         self.__balance=balance #private ( __att )
