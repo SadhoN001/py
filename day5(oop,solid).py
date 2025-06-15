@@ -89,8 +89,26 @@ c1.gf_method()
 c1.f_method()
 print(c1.fashion, c1.color, c1.first_name)
         
-    
 ## hierarchical
+## same clsss jodi multple class ke inherit kore setake hieararchical bole
+class Vehical:
+    def engine_type(self):
+        print("Vehical has an engine")
+        
+class Car(Vehical):
+    def num_door(self):
+        print("car has 4 doors")
+        
+class Truck(Vehical):
+    def load_capacity(self):
+        print("Truck can carry tons") 
+        
+car = Car()
+car.engine_type()
+car.num_door()
+truck = Truck()
+truck.engine_type()
+truck.load_capacity()
 ## hybrid
 
 
