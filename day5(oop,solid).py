@@ -192,6 +192,30 @@ kity.show_color()
 
 # # polymorphism------------------------------------------->
 ####    same function 2 ta class ei ache but akta ekrokom kaj kore
+## poly--> Multiple
+## morphism --> form
+
+# 1. Methoad Overriding
+class GrandFather:
+    def greet(self):
+        print("Grandfather says")
+        
+class Father(GrandFather):
+    def greet(self):
+        print("father says")
+        
+class Children(Father):
+    def greet(self):
+        print("Children says")
+
+gf = GrandFather()
+f= Father()
+c= Children()
+gf.greet()
+f.greet()
+c.greet()
+
+# 2. Methoad Overloading
 
 # class shape:
 #     def area(self):# all class has same modeul/function so thats polymorphism
