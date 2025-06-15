@@ -1,6 +1,6 @@
 # # Inheritance------------------------------------------------------>
 
-## single
+######################## single
 class GrandFather:
     def __init__(self, color, first_name):
         self.color= color
@@ -15,7 +15,7 @@ gf1= GrandFather('red','chowdhury')
 f1= Father('cricket','red','chowdhury')
 print(f1.color)
 
-## multiple
+######################## multiple
 class GrandFather:
     def __init__(self, color, first_name):
         self.color= color
@@ -64,7 +64,7 @@ c1.gf_method()
 c1.f_method()
 print(c1.fashion, c1.color, c1.first_name)
 
-## multilevel
+####################### multilevel
 class GrandFather:
     def __init__(self, color, first_name):
         self.color= color
@@ -89,7 +89,7 @@ c1.gf_method()
 c1.f_method()
 print(c1.fashion, c1.color, c1.first_name)
         
-## hierarchical
+#################### hierarchical
 ## same clsss jodi multple class ke inherit kore setake hieararchical bole
 class Vehical:
     def engine_type(self):
@@ -109,8 +109,27 @@ car.num_door()
 truck = Truck()
 truck.engine_type()
 truck.load_capacity()
-## hybrid
+#################### hybrid
+class Shape:
+    def area(self):
+        print("Calculating area...")
 
+class Polygon(Shape):
+    def sides(self):
+        print("Polygon has multiple sides")
+
+class Rectangle(Polygon):
+    def __init__(self, length, breadth):
+        self.length= length
+        self.breadth= breadth
+        
+    def area(self):
+        return self.length*self.breadth
+    
+rec= Rectangle(10,5)
+print(rec.area())
+rec.sides()
+rec.area()
 
     
 
