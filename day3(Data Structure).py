@@ -107,6 +107,15 @@
 #     for x,y in i.items():
 #         print(f"{x}:{y}")
 
+a=[1,2,3,4,5]
+num_itr= iter(a)
+print(next(num_itr))
+print(next(num_itr))
+print(next(num_itr))
+print(next(num_itr))
+print(next(num_itr))
+
+
 #Tuple-----------------------------------------(  )------------------------->
 # An immutable, ordered collection if items. 
 ## can not be append ,insert,change beacause immutable.
