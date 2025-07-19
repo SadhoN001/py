@@ -135,6 +135,14 @@ def fun(**kwargs):
     
 fun(age=25, l_name="dev",mark=95,f_name="Sadhon Kumar")
 
+
+def hi():
+    print("hi")
+a=hi
+def upfun(up):
+    up()
+upfun(a)
+
 ##lambda ----------------------> anonymous function
 #lambda function print korte pare na..return korte pare
 sqr=lambda x: x*x
