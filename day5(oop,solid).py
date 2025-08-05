@@ -234,6 +234,13 @@ c.greet()
     
 # c=circle(5)
 # print(c.area())
+class shape:
+    def area(self, a, b=10):
+        return a*b
+
+p= shape()
+print(p.area(12))
+print(p.area(12,5))
 
 # s=square(5)
 # print(s.area())
