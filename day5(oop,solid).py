@@ -216,6 +216,13 @@ f.greet()
 c.greet()
 
 # 2. Methoad Overloading
+class shape:
+    def area(self, a, b=10):
+        return a*b
+
+p= shape()
+print(p.area(12))
+print(p.area(12,5))
 
 # class shape:
 #     def area(self):# all class has same modeul/function so thats polymorphism
@@ -234,13 +241,6 @@ c.greet()
     
 # c=circle(5)
 # print(c.area())
-class shape:
-    def area(self, a, b=10):
-        return a*b
-
-p= shape()
-print(p.area(12))
-print(p.area(12,5))
 
 # s=square(5)
 # print(s.area())
