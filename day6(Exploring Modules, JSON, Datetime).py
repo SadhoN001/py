@@ -25,6 +25,22 @@ def generate_pin():
 
 print(f"your 4 digit pin : {generate_pin()}")
 
+# collection module
+
+import collections
+
+# print(collections.__doc__)
+# print(dir(collections))
+
+fruits=['apple', 'banana', 'apple', 'orrange']
+print(collections.Counter(fruits))
+print(collections.Counter(fruits).most_common(2))
+
+word_dic = collections.defaultdict(list)
+word_dic['python'].append('programming language')
+print(word_dic)
+
+
 
 
 
