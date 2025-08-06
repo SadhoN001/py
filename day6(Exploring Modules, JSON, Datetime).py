@@ -64,7 +64,47 @@ date_str = "25-12-2030 10:45:00"
 parse_date = datetime.datetime.strptime(date_str, "%d-%m-%Y %H:%M:%S")
 print(parse_date) #type datetime.datetime
 
+## part 2------------------------------------------------------->
+from datetime import datetime, timedelta
 
+today = datetime.today().date()
+tomorrow = today + timedelta(days=1)
+yesterday = today - timedelta(days=1)
+
+print(today)
+print(tomorrow)
+print(yesterday)
+print(type(today), type(tomorrow) ,type(yesterday)) # <class 'datetime.datetime'>
+
+# now = datetime.today()
+now = datetime.now()
+new_time = now + timedelta(hours=5, minutes=30)
+print(now, new_time)
+print(now.time(), new_time.time())
+
+date1 = datetime(2025, 12, 25)
+date2 = datetime(2025, 12, 5)
+print(date1-date2)
+print(type(date1-date2)) # <class 'datetime.timedelta'>
+# 5.40
+
+import pytz, datetime
+from datetime import datetime, UTC
+import time
+
+dhaka = pytz.timezone('Asia/Dhaka')
+utc = datetime.now(UTC)
+
+print(dhaka)
+print(utc.astimezone(dhaka))
+print(utc)
+# print(pytz.all_timezones)
+
+start = datetime.now()
+time.sleep(5)
+end = datetime.now()
+
+print(end-start)
 
 
 
