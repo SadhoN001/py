@@ -40,6 +40,29 @@ word_dic = collections.defaultdict(list)
 word_dic['python'].append('programming language')
 print(word_dic)
 
+# Datetime----------------------------------------------------------->
+import datetime
+
+now = datetime.datetime.now()
+today_date =  datetime.date.today()
+today_time =  datetime.datetime.now().time()
+custom_datetime =  datetime.datetime(2030,2,20,10,30,0) #2030-02-20 10:30:00
+print(now)
+print(today_date)
+print(today_time)
+print(custom_datetime)
+
+formatted_date = now.strftime("%Y/%m/%d %H:%M:%S")    # 25/08/06 11:20:22
+formatted_date = now.strftime("%y/%m/%d %H:%M:%S")    # 25/08/06 11:20:12
+formatted_date = now.strftime("%y/%B/%d %H:%M:%S")    # 25/August/06 11:20:00
+formatted_date = now.strftime("%y/%b/%d %A %H:%M:%S") # 25/Aug/06 Wednesday 11:19:18
+formatted_date = now.strftime("%y/%b/%d %a %H:%M:%S") # 25/Aug/06 Wed 11:19:18
+formatted_date = now.strftime("%y/%b/%d %a %I:%M:%S %p") # 25/Aug/06 Wed 11:22:18 AM
+print(formatted_date) #type----> str
+
+date_str = "25-12-2030 10:45:00"
+parse_date = datetime.datetime.strptime(date_str, "%d-%m-%Y %H:%M:%S")
+print(parse_date) #type datetime.datetime
 
 
 
