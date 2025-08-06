@@ -106,7 +106,28 @@ end = datetime.now()
 
 print(end-start)
 
+# json------------------------------------------>
+import json
 
+data = {
+    'name' : "Rahim",
+    'age' : 30,
+    'is_logged_in' : True,
+    'test' : None
+}
+# serialization : python to json----------------->
+json_string = json.dumps(data , indent=4)
+
+print(json_string)
+print(type(json_string)) #<class 'str'>
+
+#Deserialization : json to python---------------->
+
+data = '{"name" : "Rahim" , "age" : 30, "is_logged_in" : true, "test" : null}'
+
+python_dict = json.loads(data)
+print(python_dict)
+print(type(python_dict)) #<class 'dict'>
 
 
 
