@@ -3,6 +3,7 @@ import demo
 print(demo.add(1,2))
 
 from demo import add
+# from demo import add as a, mul as m
 print(add(2,2))
 
 import random
