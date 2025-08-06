@@ -132,5 +132,37 @@ print(type(python_dict)) #<class 'dict'>
 
 
 
+# request handling ------------------------------------------------->
 
+#system
+
+# Request--->(API)---> Response Cycle
+# ostad er website account create kori - POST
+# Course details dekhar try kori - GET
+# ami nijer profile update korte pari - PUT/ PATCH
+# ostad kono course delete korte pare - DELETE
+
+import requests
+# Get request
+response = requests.get("https://jsonplaceholder.typicode.com/posts")
+print(response)
+print(response.status_code) # 200 means ok
+print(response.json())
+
+# post request
+data = {'userId': 1, 'id': 1, 'title': 'for test'}
+response = requests.post("https://jsonplaceholder.typicode.com/posts", json= data )
+print(response.status_code) #201 means created
+print(response.json())
+
+# update request
+data = {'userId': 1, 'id': 1, 'title': 'for test(updated)'}
+response = requests.put("https://jsonplaceholder.typicode.com/posts/1", json= data )
+print(response.status_code) #200
+print(response.json())
+
+# Delete request
+response = requests.delete("https://jsonplaceholder.typicode.com/posts/1" )
+print(response.status_code) #200
+print(response.json())
 
