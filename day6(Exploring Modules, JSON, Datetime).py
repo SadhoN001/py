@@ -146,6 +146,7 @@ import requests
 # Get request
 response = requests.get("https://jsonplaceholder.typicode.com/posts")
 print(response)
+print(response.text)
 print(response.status_code) # 200 means ok
 print(response.json())
 
