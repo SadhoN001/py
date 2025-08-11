@@ -157,13 +157,13 @@ jt = json.dumps(student, indent=4)
 # print(type(jt))# <class 'str'>
 # # josn standar structure formate follow kore.("" /...)
 
-# with open("json-random.txt", "w") as f:
-#     # f.write("Hi") # show korbe
-#     # f.write(5) # TypeError: write() argument must be str, not int
-#     # f.write(student) #TypeError: write() argument must be str, not dict
-#     # f.write(str(student)) # txt er modhhe datetime.now()..jeta formate na..jt cmnt thakbe. 
-#     # f.write(jt) #TypeError: Object of type datetime is not JSON serializable. J1 er jonno
-#     f.write(jt) #J2 txt show output 
+with open("json-random.txt", "w") as f:
+    # f.write("Hi") # show korbe
+    # f.write(5) # TypeError: write() argument must be str, not int
+    # f.write(student) #TypeError: write() argument must be str, not dict
+    # f.write(str(student)) # txt er modhhe datetime.now()..jeta formate na..jt cmnt thakbe. 
+    # f.write(jt) #TypeError: Object of type datetime is not JSON serializable. J1 er jonno
+    f.write(jt) #J2 txt show output 
 
 with open("json-random.json", "r") as f:
     data = f.read()
