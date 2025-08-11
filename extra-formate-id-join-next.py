@@ -31,6 +31,8 @@ print(name)
 # k="skd"
 # c="".join([a,b,k])+"!"
 # print(c)
+c=", ".join([a,b,k])+"!"
+print(c)
 # c="{} {} {}".format(a,b,k)
 # print(c)
 # c="%s %s %s" %(a,b,k)
