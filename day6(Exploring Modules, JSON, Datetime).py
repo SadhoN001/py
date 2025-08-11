@@ -73,6 +73,9 @@ print(formatted_date) #type----> str
 #     second=17,
 # )
 # print(dt)
+# current_dt = datetime.now()
+# print( current_dt - dt) # 2358 days, 21:42:56.897089
+# print(type(current_dt - dt)) #<class 'datetime.timedelta'>
 
 date_str = "25-12-2030 10:45:00"
 parse_date = datetime.datetime.strptime(date_str, "%d-%m-%Y %H:%M:%S")
