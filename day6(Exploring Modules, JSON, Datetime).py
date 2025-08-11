@@ -135,6 +135,46 @@ end = datetime.now()
 print(end-start)
 
 # json(Javascript Object Notation)------------------------------------------>
+
+from datetime import datetime
+student ={
+    'name': "skd",
+    "age": 19,
+    "marks":[100,80,33],
+    "favourite_fruits": ["apple","banana"],
+    # "datetime": datetime.now(), # J1
+    "datetime": datetime.now().strftime("%B %d, %Y"), # J2
+}
+
+import json
+
+# dump korbe means json banabe.
+jt = json.dumps(student, indent=4)
+# print(jt) #{"name": "skd", "age": 19, "marks": [100, 80, 33], "favourite_fruits": ["apple", "banana"]}
+# print(repr(jt)) #'{"name": "skd", "age": 19, "marks": [100, 80, 33], "favourite_fruits": ["apple", "banana"]}'
+# print(type(student)) #<class 'dict'>
+# print(type(jt))# <class 'str'>
+# # josn standar structure formate follow kore.("" /...)
+
+# with open("json-random.txt", "w") as f:
+#     # f.write("Hi") # show korbe
+#     # f.write(5) # TypeError: write() argument must be str, not int
+#     # f.write(student) #TypeError: write() argument must be str, not dict
+#     # f.write(str(student)) # txt er modhhe datetime.now()..jeta formate na..jt cmnt thakbe. 
+#     # f.write(jt) #TypeError: Object of type datetime is not JSON serializable. J1 er jonno
+#     f.write(jt) #J2 txt show output 
+
+with open("json-random.json", "r") as f:
+    data = f.read()
+    print(data)
+    print(type(data))# type str
+    # print(data["name"]) # TypeError: string indices must be integers, not 'str'
+    # eta str..etake access korte hole python e convert korte hobe
+    data_py = json.loads(data)
+    print(data_py["name"]) #skd 
+
+
+
 import json
 
 data = {
