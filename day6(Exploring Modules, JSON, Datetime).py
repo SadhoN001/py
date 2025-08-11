@@ -116,6 +116,12 @@ print(date1-date2) #20 days, 0:00:00
 print(date1.day+date2.day) #30
 print(type(date1-date2)) # <class 'datetime.timedelta'>
 
+# import datetime,time
+
+# while True:
+#     print(datetime.datetime.now())
+#     time.sleep(2)
+
 import pytz, datetime
 from datetime import datetime, UTC
 import time
