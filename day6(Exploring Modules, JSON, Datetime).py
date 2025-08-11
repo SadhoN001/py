@@ -43,9 +43,9 @@ print(word_dic)
 # Datetime----------------------------------------------------------->
 import datetime
 
-now = datetime.datetime.now()
-today_date =  datetime.date.today()
-today_time =  datetime.datetime.now().time()
+now = datetime.datetime.now() #2025-08-11 10:23:03.750913
+today_date =  datetime.date.today() #2025-08-11
+today_time =  datetime.datetime.now().time() #10:23:03.750913
 custom_datetime =  datetime.datetime(2030,2,20,10,30,0) #2030-02-20 10:30:00
 print(now)
 print(today_date)
