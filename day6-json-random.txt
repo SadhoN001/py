@@ -1,0 +1,14 @@
+{
+    "name": "skd",
+    "age": 19,
+    "marks": [
+        100,
+        80,
+        33
+    ],
+    "favourite_fruits": [
+        "apple",
+        "banana"
+    ],
+    "datetime": "August 11, 2025"
+}
