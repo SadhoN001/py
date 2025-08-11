@@ -202,6 +202,17 @@ print(type(python_dict)) #<class 'dict'>
 
 
 # request handling ------------------------------------------------->
+import requests
+res = requests.get("https://api.dictionaryapi.dev/api/v2/entries/en/water")
+print(res.status_code)
+# print(res.text)
+
+import json
+data = json.loads(res.text)
+print(res.status_code)
+# print(data) #dictionary
+print(data[0]['meanings'])
+# print(json.dumps(data, indent=4)) #json str
 
 #system
 
