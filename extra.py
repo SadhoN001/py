@@ -17,6 +17,10 @@
 # "hello world"
 # """
 # print(name)
+name= "hi 'skd' "
+print(name)
+name= 'hi "skd" '
+print(name)
 
 # n= input()
 # a,b,c=map(int,input().split())
