@@ -96,8 +96,9 @@ print(type(today), type(tomorrow) ,type(yesterday)) # <class 'datetime.datetime'
 # now = datetime.today()
 now = datetime.now()
 new_time = now + timedelta(hours=5, minutes=30)
-print(now, new_time)
-print(now.time(), new_time.time())
+past_time = now - timedelta(hours=5, minutes=30)
+print(now, new_time, past_time)
+print(now.time(), new_time.time(), past_time.time())
 
 date1 = datetime(2025, 12, 25)
 date2 = datetime(2025, 12, 5)
