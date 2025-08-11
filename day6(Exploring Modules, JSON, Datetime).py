@@ -152,6 +152,7 @@ import json
 jt = json.dumps(student, indent=4)
 # print(jt) #{"name": "skd", "age": 19, "marks": [100, 80, 33], "favourite_fruits": ["apple", "banana"]}
 # print(repr(jt)) #'{"name": "skd", "age": 19, "marks": [100, 80, 33], "favourite_fruits": ["apple", "banana"]}'
+## print(repr("hello\nworld"))
 # print(type(student)) #<class 'dict'>
 # print(type(jt))# <class 'str'>
 # # josn standar structure formate follow kore.("" /...)
