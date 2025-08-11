@@ -48,6 +48,9 @@ today_date =  datetime.date.today() #2025-08-11
 today_time =  datetime.datetime.now().time() #10:23:03.750913
 custom_datetime =  datetime.datetime(2030,2,20,10,30,0) #2030-02-20 10:30:00
 print(now)
+print(now.year)
+print(now.month)
+print(now.day)
 print(today_date)
 print(today_time)
 print(custom_datetime)
