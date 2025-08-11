@@ -134,7 +134,7 @@ end = datetime.now()
 
 print(end-start)
 
-# json------------------------------------------>
+# json(Javascript Object Notation)------------------------------------------>
 import json
 
 data = {
