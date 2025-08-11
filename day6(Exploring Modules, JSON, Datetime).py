@@ -63,7 +63,7 @@ formatted_date = now.strftime("%y/%b/%d %a %H:%M:%S") # 25/Aug/06 Wed 11:19:18
 formatted_date = now.strftime("%y/%b/%d %a %I:%M:%S %p") # 25/Aug/06 Wed 11:22:18 AM
 print(formatted_date) #type----> str
 
-# from datetime import datetime
+# from datetime import datetime, date, time, timedelta
 # dt = datetime(
 #     year = 2019,
 #     month = 2,
@@ -76,6 +76,16 @@ print(formatted_date) #type----> str
 # current_dt = datetime.now()
 # print( current_dt - dt) # 2358 days, 21:42:56.897089
 # print(type(current_dt - dt)) #<class 'datetime.timedelta'>
+
+# #timedelta class use kore
+# #type datetime.date karon date class use korsi
+# # timedelta hobe jodi amra y-m-d er calculation kori...not only day..timedelta jar sathe thakbe o serukom acharon korbe
+# today = date.today()
+# days_later_50 = timedelta(days=50)
+# print(today + days_later_50)
+# print(today - days_later_50)
+# print(type(today - days_later_50))#<class 'datetime.date'>
+
 
 date_str = "25-12-2030 10:45:00"
 parse_date = datetime.datetime.strptime(date_str, "%d-%m-%Y %H:%M:%S")
