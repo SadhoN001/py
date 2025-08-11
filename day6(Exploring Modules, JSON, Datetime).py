@@ -102,9 +102,9 @@ print(now.time(), new_time.time(), past_time.time())
 
 date1 = datetime(2025, 12, 25)
 date2 = datetime(2025, 12, 5)
-print(date1-date2)
+print(date1-date2) #20 days, 0:00:00
+print(date1.day+date2.day) #30
 print(type(date1-date2)) # <class 'datetime.timedelta'>
-# 5.40
 
 import pytz, datetime
 from datetime import datetime, UTC
