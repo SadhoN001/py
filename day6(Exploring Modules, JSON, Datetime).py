@@ -63,6 +63,17 @@ formatted_date = now.strftime("%y/%b/%d %a %H:%M:%S") # 25/Aug/06 Wed 11:19:18
 formatted_date = now.strftime("%y/%b/%d %a %I:%M:%S %p") # 25/Aug/06 Wed 11:22:18 AM
 print(formatted_date) #type----> str
 
+# from datetime import datetime
+# dt = datetime(
+#     year = 2019,
+#     month = 2,
+#     day = 25,
+#     hour= 13,
+#     minute=5,
+#     second=17,
+# )
+# print(dt)
+
 date_str = "25-12-2030 10:45:00"
 parse_date = datetime.datetime.strptime(date_str, "%d-%m-%Y %H:%M:%S")
 print(parse_date) #type datetime.datetime
