@@ -56,6 +56,7 @@ ALTER Table blogs
 ADD author_name VARCHAR(100) DEFAULT "Anonymous";
 
 ALTER TABLE user ADD COLUMN category_id INT;
+ALTER TABLE user ADD Foreign Key (category_id) REFERENCES Categories(category_id) ON DELETE NULL ON UPDATE CASCADE;
 -- -- update values in row
 UPDATE users SET age=18 where id=3;
 UPDATE users SET address = "bangladesh" WHERE address IS NULL; 
