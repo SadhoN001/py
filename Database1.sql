@@ -1,6 +1,13 @@
 -- Active: 1755185527636@@127.0.0.1@3306@fb
 SET sql_mode = 'STRICT_ALL_TABLES'; -- execute that
 
+-- -- -- Common Datatype
+-- INT
+-- VARCHAR
+-- DATE
+-- BOOLEAN
+-- TIMESTAMP
+-- DECIMAL
 
 CREATE TABLE users(
     id INT PRIMARY KEY AUTO_INCREMENT,
