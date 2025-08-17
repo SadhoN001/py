@@ -97,3 +97,14 @@ SELECT * FROM users WHERE address is not NULL
 -- -- 8. Delete
 DELETE FROM users WHERE age<10
 
+-- -- ASC and DESC
+SELECT * FROM users ORDER BY age ASC;
+SELECT * FROM users ORDER BY age DESC;
+
+-- -- limit
+SELECT * FROM users LIMIT 5; --5 ta row show korbe
+SELECT * FROM users ORDER BY age DESC LIMIT 5; --5 ta row show korbe ulta dike
+
+-- -- like
+SELECT * FROM users WHERE name LIKE 'A%';-- A diye suru name show korbe
+SELECT * FROM users WHERE name LIKE '%on%';-- A diye suru name show korbe
