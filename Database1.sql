@@ -6,7 +6,7 @@ SET sql_mode = 'STRICT_ALL_TABLES'; -- execute that
 -- VARCHAR
 -- DATE
 -- BOOLEAN
--- TIMESTAMP
+-- TIMESTAMP : ( create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP )
 -- DECIMAL
 
 CREATE TABLE users(
