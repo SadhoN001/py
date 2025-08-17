@@ -4,7 +4,7 @@ SET sql_mode = 'STRICT_ALL_TABLES'; -- execute that
 -- -- -- Common Datatype
 -- INT
 -- VARCHAR
--- DATE
+-- DATE : (created_at DATE DEFAULT CURRENT_DATE)
 -- BOOLEAN
 -- TIMESTAMP : ( create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP )
 -- DECIMAL
