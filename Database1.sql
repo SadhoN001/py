@@ -93,3 +93,7 @@ UPDATE users SET age=28 WHERE age=21;
 ALTER Table users MODIFY COLUMN address TEXT NOT NULL;
 
 SELECT * FROM users WHERE address is not NULL
+
+-- -- 8. Delete
+DELETE FROM users WHERE age<10
+
