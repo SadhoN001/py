@@ -129,3 +129,21 @@ From Product
 GROUP BY category_id
 HAVING Product_Count>3
 
+-- -- -- Join
+-- SELECT coloum_name
+-- FROM table1
+-- @ Join table2
+-- ON table1.common_column = table2.common_column;
+
+-- table1: product(product_id, product_name, description, price,stock,create_at, category_id)
+-- tavle2: categories( category_id, category_name, create_at)
+
+SELECT product_id, product_name, price, category_name
+FROM Products
+INNER JOIN Categories
+ON Products.category_id = Categories.category_id
+
+-- inner join : category name sequence thakbe id majority dibe(prothome id 1 paile sob id1 tene anbe)
+-- left join : left sider guloke majority dibe id onusare
+-- right join : right sider guloke majority dibe id onusare
+-- cross join : row * coloumn , category id sequence e thakbe 1,1,2,3,3,3
