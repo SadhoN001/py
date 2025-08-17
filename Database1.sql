@@ -55,6 +55,7 @@ ALTER Table users MODIFY COLUMN addres TEXT NOT NULL;
 ALTER Table blogs
 ADD author_name VARCHAR(100) DEFAULT "Anonymous";
 
+ALTER TABLE user ADD COLUMN category_id INT;
 -- -- update values in row
 UPDATE users SET age=18 where id=3;
 UPDATE users SET address = "bangladesh" WHERE address IS NULL; 
