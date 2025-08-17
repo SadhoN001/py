@@ -91,7 +91,11 @@ SELECT CAST(AVG(age) AS DECIMAL(10,2)) AS Average_age FROM users;
 SELECT BIN(AVG(age)) AS Average_age FROM users;
 -- -- (iii) Sum:
 SELECT SUM(age) AS Total_Salary FROM users;
-
+-- -- (iv) MIN:
+SELECT MIN(age) FROM users
+-- -- (v) MAX:
+SELECT MAX(age) FROM users
+    
 -- -- 6. In and Not In operator:
 SELECT * FROM users WHERE age=23 OR age=25;
 SELECT * FROM users WHERE age IN (23,25);
