@@ -117,3 +117,15 @@ SELECT * FROM users ORDER BY age DESC LIMIT 5; --5 ta row show korbe ulta dike
 -- -- like
 SELECT * FROM users WHERE name LIKE 'A%';-- A diye suru name show korbe
 SELECT * FROM users WHERE name LIKE '%on%';-- A diye suru name show korbe
+
+-- -- Group By
+SELECT category_id, COUNT(product_id) AS Product_Count
+From Product
+GROUP BY category_id
+
+-- -- Having    
+SELECT category_id, COUNT(product_id) AS Product_Count
+From Product
+GROUP BY category_id
+HAVING Product_Count>3
+
