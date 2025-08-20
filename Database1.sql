@@ -51,6 +51,10 @@ ALTER Table users
 MODIFY age INT NOT NULL;
 ALTER Table users MODIFY COLUMN addres TEXT NOT NULL;
 
+-- -- Rename column
+ALTER TABLE users
+CHANGE COLUMN name username VARCHAR(255);
+
 -- -- add coloum modify
 ALTER Table blogs
 ADD author_name VARCHAR(100) DEFAULT "Anonymous";
