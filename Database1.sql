@@ -51,9 +51,13 @@ ALTER Table users
 MODIFY age INT NOT NULL;
 ALTER Table users MODIFY COLUMN addres TEXT NOT NULL;
 
--- -- Rename column
+-- -- Rename column *********************************
 ALTER TABLE users
 CHANGE COLUMN name username VARCHAR(255);
+
+-- -- Rename Table *********************************
+RENAME TABLE users TO fb_users;
+ALTER TABLE users RENAME TO fb_users;
 
 -- -- add coloum modify
 ALTER Table blogs
