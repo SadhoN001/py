@@ -59,6 +59,15 @@ CHANGE COLUMN name username VARCHAR(255);
 RENAME TABLE users TO fb_users;
 ALTER TABLE users RENAME TO fb_users;
 
+-- -- Drop Column (DELETE Column) ******************
+ALTER TABLE users DROP COLUMN age;
+
+-- -- Drop Table (DELETE Table) ********************
+DROP TABLE users 
+
+-- -- Drop Database (DELETE Database) ****************
+DROP DATABASE fb 
+    
 -- -- add coloum modify
 ALTER Table blogs
 ADD author_name VARCHAR(100) DEFAULT "Anonymous";
