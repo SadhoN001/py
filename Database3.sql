@@ -189,6 +189,8 @@ ON dept_avarages.dep_id = departments.id
 WHERE dept_avarages.avg_salary > 60000;
 
 -- --index
+-- primary index(clustered index) ----------> pk
+-- secondary index(Non-clustered index)
 SELECT * FROM employees;
 SELECT * FROM departments;
 
