@@ -75,7 +75,7 @@ VALUES ("Villan", 2);
 
 SELECT * FROM student;
 SELECT * FROM class;
-DELETE FROM class WHERE id=1; --  error dibe karon foreign key
+DELETE FROM class WHERE id=5; --  error dibe karon foreign key
 DELETE FROM class WHERE id=1; -- 1 id sathe foreign key value store hoi nai tai delete korea jachhe,5 dile hobe na
 
 -- cascade use
