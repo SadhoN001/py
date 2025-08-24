@@ -205,3 +205,12 @@ SELECT * FROM employees
 WHERE employees.salary = 65000;
 
 DESCRIBE employees;
+
+-- unique index (duplicate thaka jabe na)
+CREATE UNIQUE INDEX idx_unique_email ON User(email);
+-- composite index (multiple coloum eksathe kore new index korbe)
+CREATE INDEX idx_composite ON Orders(customer_id, order_date);
+
+
+
+
