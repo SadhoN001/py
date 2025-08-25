@@ -168,3 +168,13 @@ ON Products.category_id = Categories.category_id
 -- left join : left sider guloke majority dibe id onusare
 -- right join : right sider guloke majority dibe id onusare
 -- cross join : row * coloumn , category id sequence e thakbe 1,1,2,3,3,3
+
+-- qsn:  1st and last later are not VOWEL 
+-- Query the list of CITY names from STATION that do not start with vowels and do not end with vowels. Your result cannot contain duplicates.
+-- Input Format
+-- The STATION table is described as follows: ***
+
+SELECT DISTINCT CITY 
+FROM STATION 
+WHERE CITY NOT REGEXP '^[aeiou]' AND CITY NOT REGEXP '[aeiou]$'
+
