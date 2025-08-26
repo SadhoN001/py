@@ -245,6 +245,7 @@ print(next(num_itr))
 # print(my_dict['name']) #skd
 # my_dict.clear()
 # print(my_dict) #{}
+#print(my_dict.add(5))
 
 # my_dict={'name':"skd", 'age':'25', 'city':'bangladesh'}
 # keys=my_dict.keys()
