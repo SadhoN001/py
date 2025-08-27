@@ -3,55 +3,55 @@
 #list----------------------------------------[  ]----------------------->
 # An ordered,mutable collection of iteams.
 
-# my_list=[1,2,3,4,5]
-# first_element=my_list[0]
-# subset=my_list[1:4]
-# my_list[2]=10
-# my_list.append(6)
-# my_list.remove(4)
+my_list=[1,2,3,4,5]
+first_element=my_list[0]
+subset=my_list[1:4]
+my_list[2]=10
+my_list.append(6)
+my_list.remove(4)
 
-# print(f'my list: {my_list}')
-# print(f'first_element: {first_element}')
-# print(f'subset: {subset}')
+print(f'my list: {my_list}')
+print(f'first_element: {first_element}')
+print(f'subset: {subset}')
 
-# import numpy as np
-# my_array= np.array([1,2,3,4,5])
-# frist_element_np= my_array[0]
-# print(f'my numpy array: {my_array}')
-# print(f'frist_element_np: {frist_element_np}')
+import numpy as np
+my_array= np.array([1,2,3,4,5])
+frist_element_np= my_array[0]
+print(f'my numpy array: {my_array}')
+print(f'frist_element_np: {frist_element_np}')
 
-# list=[1,2,3,4]
-# print(type(list))
-# list.append("skd")#insert/append element in the list
-# print(list) ###[1, 2, 3, 4, 'skd']
-# list.remove(3)# remove element list <----------------|
-# print(list) ###[1, 2, 4, 'skd']
-# print(list[3]) ###Access by Index--->skd
-# list[0]="change"
-# print(list) ###['change', 2, 4, 'skd']
-# list.insert(2,200)# insert element list <-------------|
-# print(list) ###['change', 2, 200, 4, 'skd']
-# print(list.count(100)) ###0
-# print(list.index(200)) ###2
-# # list.sort(reverse=True)
-# # print(list)
-# # s=sorted(list)
-# # print(s)
-# print(len(list)) ###5
+list=[1,2,3,4]
+print(type(list))
+list.append("skd")#insert/append element in the list
+print(list) ###[1, 2, 3, 4, 'skd']
+list.remove(3)# remove element list <----------------|
+print(list) ###[1, 2, 4, 'skd']
+print(list[3]) ###Access by Index--->skd
+list[0]="change"
+print(list) ###['change', 2, 4, 'skd']
+list.insert(2,200)# insert element list <-------------|
+print(list) ###['change', 2, 200, 4, 'skd']
+print(list.count(100)) ###0
+print(list.index(200)) ###2
+# list.sort(reverse=True)
+# print(list)
+# s=sorted(list)
+# print(s)
+print(len(list)) ###5
 
-# n=int(input("Enter the number: "))
-# l=[]
-# for i in range(n):
-#     l.append(input())
-# print(l)
+n=int(input("Enter the number: "))
+l=[]
+for i in range(n):
+    l.append(input())
+print(l)
 
-# user_inp=input("Enter item separated by comma: ") # apple,banana,mango
-# l=user_inp.split(",")
-# print(l)
+user_inp=input("Enter item separated by comma: ") # apple,banana,mango
+l=user_inp.split(",")
+print(l)
 
-# user_inp=input("Enter item separated by space: ") # 1 2 3 4
-# l=list(map(int,user_inp.split()))# only int [str...etc]
-# print(l)
+user_inp=input("Enter item separated by space: ") # 1 2 3 4
+l=list(map(int,user_inp.split()))# only int [str...etc]
+print(l)
 
 # def l_sum(a):
 #     sum=0
