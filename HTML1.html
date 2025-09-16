@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is h1 tag</h1>
+    <h2>This is h2 tag</h2>
+    <h3>This is h3 tag</h3>
+    <h4>This is h4 tag</h4>
+    <h5>This is h5 tag</h5>
+    <h6>This is h6 tag</h6>
+
+    <p> This is p tag</p>
+    <a href="www.google.com">click</a>
+    <img src="/assets/image.png" alt="">
+    <video width="320" height="240" controls>
+        <source src="/assets/my-video.mp4" type="video/mp4">
+    </video>
+
+    <!-- anchor tags -->
+    <a href="https://www.google.com" target="_blank">visit google</a> <br>
+    <a href="mailto:example@email.com">send an Email</a> <br>
+    <a href="tel:+8801954190364">Call now</a> <br>
+    <a href="/assets/image.png" download="">download img</a> <br>
+
+    <!-- img attributes -->
+     <img src="/assets/image.png" alt="img" height="300" width="200" title="this is our img">
+
+     <!-- list  -->
+      <h2>Ordered list</h2>
+      <ol type="i">
+        <li>apple</li>
+        <li>banana</li>
+        <li>berry</li>
+      </ol>
+      <ul type="circle">
+        <!-- circle,square -->
+        <li>apple</li>
+        <li>banana</li>
+        <li>berry</li>
+      </ul>
+
+      <ol>
+        <li>
+            client
+            <ul>
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+            </ul>
+        </li>
+        <li>
+            server
+            <ul>
+                <li>node.js</li>
+                <li>mongodb</li>
+                <li>php</li>
+            </ul>
+        </li>
+      </ol>
+      <!-- defination list  -->
+       <dl>
+        <dt>html</dt>
+        <dd>this is html</dd>
+        <dt>css</dt>
+        <dd>this is css </dd>
+       </dl>
+
+       <!-- table  -->
+    <table border="1">
+        <caption>Student Information</caption>
+        <!-- colspan pasa pasi jaiga nibe -->
+        <!-- rowspan upor nich jaiga nibe -->
+        <tr>
+            <th>Name</th>
+            <th>class</th>
+            <th>number</th>
+        </tr>
+        <tr>
+            <td>skd</td>
+            <td>class 1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Alex</td>
+            <td>class 2</td>
+            <td>2</td>
+        </tr>
+    </table>
+
+    <!-- form  -->
+    <form >
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Your Name" required> <br>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" required> <br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required> <br>
+
+        <label for="pw">Password:</label><br>
+        <input type="password" name="pw" id="pw" required><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required> <br>
+
+        <label for="gender">gender</label> <br>
+
+        <input type="radio" name="gender" id="male" value="male" required>
+        <label for="male">Male</label> <br>
+        <input type="radio" name="gender" id="female" value="female" required>
+        <label for="female">female</label> <br>
+        <input type="radio" name="gender" id="other" value="other" required>
+        <label for="other">Other</label> <br>
+        <!-- name same dile ektai select korbe -->
+        <label for="country" name="country">Country:</label>
+        <select name="country" id="country" required>
+            <option value="">select a country</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="others">others</option>
+        </select>
+        <br>
+
+        <label for="dob">Date Of Birth:</label> <br>
+        <input type="date" name="dob" id="dob" required> <br>
+
+        <input type="checkbox" name="ch" id="ch"> <br>
+        <input type="color" name="color" id="color"> <br>
+
+        <label for="address">address</label><br>
+        <textarea name="address" id="address" required></textarea> <br>
+
+        <input type="submit" name="" id="submit">
+        <input type="reset" name="" id="reset">
+    </form>
+
+    <!-- button  -->
+    <button type="button">Click ME</button> <br>
+    <button type="submit">Click ME</button> <br>   
+    <input type="submit" value="submit data"> <br>
+    <button type="reset">Click ME</button> <br>   
+
+<!-- html semantic element  -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>this is our content</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, exercitationem.</p>
+    </section>
+
+    <article>
+        <h3>this is blog post</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <time datetime="2021-01-01">jan 1,2021</time>
+    </article>
+
+    <aside>
+        <h4>about the author</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </aside>
+
+    <footer>
+        <p>&copy; this is blog</p>
+    </footer>
+
+    <figure>
+        <img src="#" alt="no img">
+        <figcaption>img caption</figcaption>
+    </figure>
+
+<!-- html audio and video element  -->
+ <audio controls autoplay muted loop>
+    <source src="/assets/epic-relaxing-flute-music-144009.mp3" type="audio/mpeg">
+    your browser doesnot support the audio
+ </audio> 
+ <!-- video dekhano hoise upore -->   
+
+ <!-- iframe (embeded kore anbe) --> <br>
+
+ <!-- <iframe src="https://ostad.app/" frameborder="1" width="600" height="800" allowfullscreen></iframe><br> -->
+
+ <!-- <iframe src="https://www.youtube.com/embed/H6xfXcpoL0I?list=RDH6xfXcpoL0I&start_radio=1" frameborder="1" width="600" height="800" allowfullscreen></iframe> -->
+  
+  <!-- <iframe 
+    width="600" 
+    height="800" 
+    src="https://www.youtube.com/embed/H6xfXcpoL0I?list=RDH6xfXcpoL0I&start_radio=1" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe> -->
+
+<!-- entities and symbol  -->
+    <strong>
+        &lt;
+        &gt;
+        &amp;
+        &quot;
+        &copy;
+
+    </strong>
+</body>
+</html>
